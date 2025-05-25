@@ -1,0 +1,55 @@
+*{
+    margin: 10px;
+    padding: 10px;
+}
+body{
+    font-size: 15;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(162, 221, 221);
+    margin: 10px;
+    padding: 10px;
+    border: 10px;
+    border-color: 2px solid aqua;
+}
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section{
+    display: block;
+}
+h2{
+    font: 24px;
+    font-weight: 100px;
+}
+#info {
+    width: 70%;
+    margin: 60px auto;
+    padding: 20px;
+    background: #eee;
+    overflow: hidden;
+}
+#sidebar {
+    width: 35%;
+    float: left;
+
+}
+#sidebar ul li a{
+    color: red;
+    display: block;
+}
+#para{
+    width: 54%;
+    float:right;
+}
+@media all and (min-width: 1001px) {
+    #info ul li a:after{
+        content: "("attr(data-email)")";
+        font-size: 11px;
+        font-style: italic;
+        color: blue;
+    }
+}
